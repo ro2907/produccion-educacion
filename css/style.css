@@ -51,6 +51,10 @@ p {
   font-size: 15px; }
   figcaption p {
     font-size: 55px; }
+  
+.bgBlue{
+  background: #002e83;
+}
 
 .main-block {
   padding: 90px 0; }
@@ -58,6 +62,12 @@ p {
     .main-block {
       padding: 45px 0; } }
 
+      .main-block-footer {
+        padding: 40px 0 20px 0; }
+        @media (max-width: 768px) {
+          .main-block-footer {
+            padding: 20px 0 10px 0; } }
+      
 .light-bg {
   background: #f3f4f7; }
 
@@ -122,7 +132,7 @@ p {
   height: 70px; }
 
 .is-sticky {
-  background: #252a33;
+  background: #002e83;
   opacity: 1; }
 
 .transition {
@@ -141,7 +151,7 @@ p {
   @media (max-width: 992px) {
     .fixed {
       border: none;
-      background: #252a33; } }
+      background: #002e83; } }
 
 .dropdown-menu {
   background: #030303; }
@@ -166,12 +176,15 @@ p {
 
   display: block;
   height: 600px;
-  background:linear-gradient(rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url(https://ganar-ganar.mx/wp-content/uploads/2022/05/educacio%CC%81n-tecnolo%CC%81gica.jpg);
+  background:linear-gradient(rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url(../images/educación-tecnológica.jpg);
   background-position: center center;
   background-size: cover;}
   @media (max-width: 992px) {
     .slider {
-      min-height: 700px; } }
+      background:linear-gradient(rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url(../images/movil-educación-tecnológica.jpg);
+      background-position: center center;
+  background-size: cover;
+      height: 600px; } }
 
 .btn-outline-light {
   padding: 10px 16px; }
@@ -731,7 +744,8 @@ footer {
   .booking-checkbox_wrap h5 {
     color: #3e434b;
     text-align: center;
-    font-weight: 400; }
+    font-weight: 400; 
+    font-size: 20px;}
 
 .booking-checkbox {
   color: #737882;
@@ -968,5 +982,11 @@ footer {
 #map {
   height: 100%;
   width: 100%; }
+
+  @media(min-width: 768px){
+    .wNombre{
+      width: 90px;
+    }
+  }
 
 /*# sourceMappingURL=style.css.map */

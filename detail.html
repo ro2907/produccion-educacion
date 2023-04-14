@@ -21,7 +21,7 @@
     <!-- Favicons -->
     <link rel="shortcut icon" href="#">
     <!-- Page Title -->
-    <title>Guia Comercial del Norte</title>
+    <title>Escuela Municipal Perico</title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <!-- Google Fonts -->
@@ -38,66 +38,48 @@
     <link rel="stylesheet" href="css/magnific-popup.css">
     <!-- Main CSS -->
     <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+     integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
+     crossorigin=""/>
+     <!-- Make sure you put this AFTER Leaflet's CSS -->
+ <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+ integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
+ crossorigin=""></script>
 </head>
 
 <body>
     <!--============================= HEADER =============================-->
-    <div class="dark-bg sticky-top">
+    <div class="sticky-top bgBlue mb-1">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-md-12">
-                    <nav class="navbar navbar-expand-lg navbar-light">
-                        <a class="navbar-brand" href="index.html">GCN</a>
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="icon-menu"></span>
-            </button>
-                        <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
-                            <ul class="navbar-nav">
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                   Explorar
-                   <span class="icon-arrow-down"></span>
-                 </a>
-                                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                        <a class="dropdown-item" href="#">Action</a>
-                                        <a class="dropdown-item" href="#">Another action</a>
-                                        <a class="dropdown-item" href="#">Something else here</a>
-                                    </div>
-                                </li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link" href="#" id="navbarDropdownMenuLink1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Listados
-                  <span class="icon-arrow-down"></span>
-                </a>
-                                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                        <a class="dropdown-item" href="#">Action</a>
-                                        <a class="dropdown-item" href="#">Another action</a>
-                                        <a class="dropdown-item" href="#">Something else here</a>
-                                    </div>
-                                </li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link" href="#" id="navbarDropdownMenuLink2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Páginas
-                  <span class="icon-arrow-down"></span>
-                </a>
-                                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                        <a class="dropdown-item" href="#">Action</a>
-                                        <a class="dropdown-item" href="#">Another action</a>
-                                        <a class="dropdown-item" href="#">Something else here</a>
-                                    </div>
-                                </li>
-                                <li class="nav-item active">
-                                    <a class="nav-link" href="#">Categorías</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Nosotros</a>
-                                </li>
-                                <li><a href="#" class="btn btn-outline-light top-btn"><span class="ti-plus"></span> Sumarse</a></li>
-                            </ul>
-                        </div>
-                    </nav>
+                    <div class="col-md-12">
+                        <nav class="navbar navbar-expand-lg navbar-light"> 
+                            <a class="navbar-brand" href="index.html"><img style="height: 70px;" src="./images/logo-PRODUCCION-web-2.png" alt=""></a>
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="icon-menu"></span>
+              </button>
+                            <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item active">
+                                        <a class="nav-link" href="index.html">Inicio</a>
+                                    </li>
+                                    <li class="nav-item active">
+                                        <a class="nav-link" href="index.html#nuestrasActividades">Nuestras Actividades</a>
+                                    </li>
+                                    <li class="nav-item active">
+                                        <a class="nav-link" href="index.html#paginasAlumnos">Páginas de Alumnos</a>
+                                    </li>
+                                    <li class="nav-item active">
+                                        <a class="nav-link" href="detail.html">Conocer Más</a>
+                                    </li>
+                                    
+                                   
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
                 </div>
-            </div>
         </div>
     </div>
     <!--//END HEADER -->
@@ -151,7 +133,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
-                    <h5>Proyecto: Programación Web y Tecnología para Escuela Municipal (Etapa Inicial)</h5>
+                    <h4>Proyecto: Programación Web y Tecnología para Escuela Municipal (Etapa Inicial)</h4>
                     
                     <p class="reserve-description">Este proyecto tiene como objetivo proporcionar a los estudiantes de una escuela municipal las habilidades y conocimientos necesarios para aprender programación web y tecnología, lo que les permitirá estar preparados para las oportunidades laborales futuras y contribuir al desarrollo de su comunidad.</p>
                 </div>
@@ -160,7 +142,7 @@
                         
                         <div class="reserve-btn">
                             <div class="featured-btn-wrap">
-                                <a aria-label="Chat on WhatsApp" href="https://wa.me/3884918342" > <img style="width: 70%;" alt="Chat on WhatsApp" src="./images/WhatsAppButtonGreenSmall.png" /> </a>
+                                <a aria-label="Chat on WhatsApp" href="https://wa.me/5493884324235/?text=Hola%20Escuela%20Munucipal%20de%20Ciudad%20Perico%20mi%20consulta%20es..." > <img style="width: 70%;" alt="Chat on WhatsApp" src="./images/WhatsAppButtonGreenSmall.png" /> </a>
                             </div>
                         </div>
                     </div>
@@ -218,7 +200,7 @@
                             <div class="col-md-4">
                                 <label class="custom-checkbox">
                      <span class="ti-check-box"></span>
-                     <span class="custom-control-description">Seguimiento a Alumnos </span>
+                     <span class="custom-control-description">Seguimiento a Alúmnos </span>
                    </label> </div>
                             <div class="col-md-4">
                                 <label class="custom-checkbox">
@@ -234,54 +216,73 @@
                             <div class="col-md-4">
                                 <label class="custom-checkbox">
                   <span class="ti-check-box"></span>
-                  <span class="custom-control-description">Metodologías Agiles</span>
+                  <span class="custom-control-description">Metodologías Ágiles</span>
                 </label>
                             </div>
                         </div>
                     </div>
                     <div class="booking-checkbox_wrap mt-4">
-                        <h5>34 Reviews</h5>
+                        <p class="text-center fs-1">CAPACITADORES</p>
                         <hr>
                         <div class="customer-review_wrap">
                             <div class="customer-img">
-                                <img src="images/customer-img1.jpg" class="img-fluid" alt="#">
-                                <p>Amanda G</p>
-                                <span>35 Reviews</span>
+                                <img src="images/Rodrigo.png" class="img-fluid" style="width: 81px;" alt="#">
+                                <p class="text-ms-wrap wNombre">Rodrigo S. Alarcón</p>
+                                <!-- <span>35 Reviews</span> -->
                             </div>
                             <div class="customer-content-wrap">
                                 <div class="customer-content">
                                     <div class="customer-review">
-                                        <h6>Los mejores fideos de la Ciudad...</h6>
+                                        <!-- <h6>Rodrigo S. Alarcon</h6> -->
+                                        <!-- <span></span>
                                         <span></span>
                                         <span></span>
-                                        <span></span>
-                                        <span></span>
-                                        <span class="round-icon-blank"></span>
-                                        <p>Hace 2 días</p>
+                                        <span></span> -->
+                                        <!-- <span class="round-icon-blank"></span>
+                                        <p>Hace 2 días</p> -->
                                     </div>
-                                    <div class="customer-rating">8.0</div>
+                                    <!-- <div class="customer-rating">8.0</div> -->
                                 </div>
-                                <p class="customer-text">Me encantan los fideos aquí, pero es muy raro que venga aquí. El Tano es el mejor tipo de restaurante. El personal es realmente agradable, y debe sentarse rápidamente. Normalmente pido el
-                                    fideos tirados a mano en una sopa. House Special # 1 es increíble y los fideos de cordero también son geniales. Si quieres que tus fideos sean un poco más suaves, pide los fideos cortados con cuchillo, que también son increíbles. Sus albóndigas son geniales
-                                    bañadas en su salsa de picante.
+                                <h5>EXPERIENCIA</h5>
+                                <p class="customer-text">
+                                    <strong>Fares Coding Bootcamp,</strong> <br> Ciudad: Perico
+                                    2021-2022. <br>
+                                    Cofundador de Fares y Profesor, enseñando las siguientes
+                                    tecnologías: HTML, CSS, JAVASCRIPT, REACT Y NODE. Fares es una
+                                    Empresa dedicada a La Formación de Jóvenes como Programadores
+                                    FullStack con el objetivo de insertarlos Laboralmente en Empresas de
+                                    Software. <br> <br>
+                                    <strong>Capacitación en Robótica,</strong> <br> Ciudad:Perico
+                                    2020- 2021. <br>
+                                    Capacitación a adolescentes de escasos recursos En Robótica y Electrónica
+                                    Empleando arduino y Modulos Complementarios. <br> <br>
+                                    <strong>Codigo Audio,</strong> <br> Ciudad: Perico
+                                    2013-2020. <br>
+                                    Fundador de Código Audio y Técnico Electrónico. Empresa dedicada a la
+                                    instalación y venta de sistemas de Sonido para automóviles y reparación
+                                    de amplificadores de última generación. <br> <br>
+                                    <strong>Jumper Desarrollo Tecnológicos,</strong> <br> Ciudad: Perico
+                                    2014- 2016. <br>
+                                    Cofundador y técnico. Empresa Desarrolladora de Software Para negocios
+                                    y mantenimiento de Software y Hardware.
                                 </p>
-                                <p class="customer-text">Me encanta cómo puedes ver la cocina y verlos hacer los fideos y definitivamente puedes decir que este es un establecimiento familiar. Los precios son geniales con un plato a $9. Solo tienes que recordar
+                                <!-- <p class="customer-text">Me encanta cómo puedes ver la cocina y verlos hacer los fideos y definitivamente puedes decir que este es un establecimiento familiar. Los precios son geniales con un plato a $9. Solo tienes que recordar
                                      traer dinero en efectivo.
-                                </p>
-                                <ul>
+                                </p> -->
+                                <!-- <ul>
                                     <li><img src="images/review-img1.jpg" class="img-fluid" alt="#"></li>
                                     <li><img src="images/review-img2.jpg" class="img-fluid" alt="#"></li>
                                     <li><img src="images/review-img3.jpg" class="img-fluid" alt="#"></li>
                                 </ul>
                                 <span>28 personas marcaron esta reseña como útil</span>
-                                <a href="#"><span class="icon-like"></span>Útil</a>
+                                <a href="#"><span class="icon-like"></span>Útil</a> -->
                             </div>
                         </div>
                         <hr>
                         <div class="customer-review_wrap">
                             <div class="customer-img">
-                                <img src="images/customer-img2.jpg" class="img-fluid" alt="#">
-                                <p>Kevin W</p>
+                                <img src="images/Willy.png" class="img-fluid" style="width: 81px;" alt="#">
+                                <p class="text-ms-wrap  wNombre">Wilfredo Sausa</p>
                                 <span>17 Reviews</span>
                             </div>
                             <div class="customer-content-wrap">
@@ -308,10 +309,11 @@
                 </div>
                 <div class="col-md-4 responsive-wrap">
                     <div class="contact-info">
-                        <img src="images/map.jpg" class="img-fluid" alt="#">
+                        <!-- <img src="images/FaresFlix.png" class="img-fluid" alt="#"> -->
+                        <div id="map" style="height:350px;" ></div>
                         <div class="address">
                             <span class="icon-location-pin"></span>
-                            <p> calle Alvear Nº1232<br> Perico, <br> Jujuy <br> Barrio Centro</p>
+                            <p> Calle Nicolás Lamas y Av Canadá<br> Barrio Bancario <br> Perico, <br> Jujuy </p>
                         </div>
                         <div class="address">
                             <span class="icon-screen-smartphone"></span>
@@ -319,36 +321,36 @@
                         </div>
                         <div class="address">
                             <span class="icon-link"></span>
-                            <p>https://eltano.com</p>
+                            <p>https://produccionindustriaperico.com.ar</p>
                         </div>
-                        <div class="address">
+                        <div class="address mb-4">
                             <span class="icon-clock"></span>
-                            <p>lun - dom 09:30 am - 05:30 pm <br>
-                                <span class="open-now">ABIERTO AHORA</span></p>
+                            <p>lun - vie 07:00 am - 13:00 pm </p>
+                               
                         </div>
                         <a href="#" class="btn btn-outline-danger btn-contact">ENVIAR UN MENSAJE</a>
                     </div>
                     <div class="follow">
                         <div class="follow-img">
-                            <img src="images/follow-img.jpg" class="img-fluid" alt="#">
-                            <h6>Christine Evans</h6>
-                            <span>JUJUY</span>
+                            <img src="images/Martin.png" class="img-fluid" alt="#">
+                            <h6>Martín Miguel Llanos</h6>
+                            <span> Secretario de Producción e Industria</span>
                         </div>
                         <ul class="social-counts">
                             <li>
-                                <h6>26</h6>
-                                <span>Listados</span>
+                                <h6></h6>
+                                <span></span>
                             </li>
                             <li>
-                                <h6>326</h6>
+                                <h6>+2000</h6>
                                 <span>Seguidores</span>
                             </li>
                             <li>
-                                <h6>12</h6>
-                                <span>segidores</span>
+                                <h6></h6>
+                                <span></span>
                             </li>
                         </ul>
-                        <a href="#">SEGUIR</a>
+                        <a href="https://www.facebook.com/martin.llanos.376">SEGUIR</a>
                     </div>
                 </div>
             </div>
@@ -356,7 +358,7 @@
     </section>
     <!--//END BOOKING DETAILS -->
     <!--============================= FOOTER =============================-->
-    <footer class="main-block dark-bg">
+    <footer class="main-block-footer bgBlue">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
@@ -422,6 +424,15 @@
             });
         }
     </script>
+    <script>
+        var map = L.map('map').setView([-24.3858595,-65.1323305], 16);
+        L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 19,
+    attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+    }).addTo(map);
+
+    L.marker([-24.385287, -65.133516]).addTo(map).bindPopup("Sec. Producción e Industria");
+    </script> 
 </body>
 
 </html>
